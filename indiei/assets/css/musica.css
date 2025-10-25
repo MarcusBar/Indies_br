@@ -1,0 +1,228 @@
+*{margin: 0;}
+
+.negritoVermelho{
+    color: red;
+}
+
+
+header{
+    width: 100.1vw;
+    height: 10vh;
+    position: absolute;
+    left: -0.1%;
+    top: -0.1%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    z-index: 30;
+}
+
+
+.headerTexto {
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    color: #EDFF1A;
+}
+
+.headerDecorarTexto{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.headerDecorarTexto::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #EDFF1A;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.headerDecorarTexto:hover::after{
+width: 100%;
+}
+
+
+body{
+    overflow-x:hidden ;
+    background-color: #121212;
+    background-image:  linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url(../Fotos/Fundo.png);  
+}
+
+.musicaTudo{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10vh;
+    
+}
+
+.direitaDaMusica{
+   
+    width: 50vw;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImagemELinks{
+    
+    width: 45vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemDaMusica{
+    width: 35vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+.organizarTODOSOSLINKS{
+    height: auto;
+    width: 35vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textoDoLinkDasMusicas{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff ;
+}
+
+
+.esquerdaDaMusica{
+    background-color: rgba(13, 13, 13, 0.7);
+    border-radius: 190px;
+
+}
+
+.tituloELetra{
+ 
+    height: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+
+.organizarTituloEArtista{
+   
+    height: auto;
+    width: 50vwa;
+}
+
+.organizarArtistaEBotao{
+    display: flex;
+
+    width: 40vw;
+    height: auto;
+    
+    margin-left: 6vw;
+}
+
+.organizarBotao{
+    
+    height: auto;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botao{
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #272727;
+    color: white;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1vw;
+    font-size: 2vh;
+}
+
+.tituloDaLetra{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vh;
+    letter-spacing: 0.7vh;
+    z-index: 1;
+    width: 60vw;
+    color: #EDFF1A ;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6vw;
+    margin-bottom:5px ;
+    background-color: rgba(13, 13, 13, 0.7);
+    border-radius: 100px;
+    
+}
+
+.nomeDoArtista{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    letter-spacing: 0.2vh;
+    z-index: 1;
+    width: auto;
+    color: #e9870f ;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.organizarLetras{
+    
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6vw;
+}
+
+.letraDaMusicaUm{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 3vh ;
+    text-align: justify;
+    margin: 5px; 
+}
+
+.significado{
+    display: none;
+    height: auto;
+    width: 60vw;
+    justify-content: flex-start;
+    margin-left: 6vw;
+}
+
+
+
+
