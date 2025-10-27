@@ -1,59 +1,15 @@
+@import url(sty.css);
 *{margin: 0;}
-
-.negritoVermelho{
-    color: red;
-}
-
-
-header{
-    width: 100.1vw;
-    height: 10vh;
-    position: absolute;
-    left: -0.1%;
-    top: -0.1%;
-    background-color: rgba(0, 0, 0, 0.6);
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    z-index: 30;
-}
-
-
-.headerTexto {
-    font-family: "Jacques Francois", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vh;
-    color: #EDFF1A;
-}
-
-.headerDecorarTexto{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-}
-
-.headerDecorarTexto::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #EDFF1A;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-}
-
-.headerDecorarTexto:hover::after{
-width: 100%;
-}
-
 
 body{
     overflow-x:hidden ;
-    background-color: #121212;
-    background-image:  linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url(../Fotos/Fundo.png);  
+    background-color: #130D16;
+    background-image:  linear-gradient(rgba(19, 13, 22, 0.8), rgba(19, 13, 22, 0.8)), url(../Fotos/Fundo.png); 
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10vh; 
 }
 
 .musicaTudo{
@@ -62,13 +18,12 @@ body{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 10vh;
-    
 }
 
-.direitaDaMusica{
-   
+.parteDaDireita{
     width: 50vw;
-    height: 115vh;
+    height: 110vh;
+    margin-top: -5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,87 +39,43 @@ body{
     align-items: center;
 }
 
-.imagemDaMusica{
-    width: 35vw;
-    height: 70vh;
+.ImagemELinks img:nth-child(1){
+    width: 30vw;
+    height: 55vh;
     border-radius: 20px;
 }
 
-.organizarTODOSOSLINKS{
+.linksExternos{
     height: auto;
-    width: 35vw;
+    width: 34vw;
     margin-top: 2vh;
     display: flex;
     justify-content: space-evenly;
 }
 
-.textoDoLinkDasMusicas{
+.linksExternos p{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vh;
+    font-size: 3.6vh;
     letter-spacing: 0.1;
     z-index: 1;
     width: auto;
     color: #ffffff ;
 }
 
-
-.esquerdaDaMusica{
-    background-color: rgba(13, 13, 13, 0.7);
-    border-radius: 190px;
-
+.parteDaEsquerda{
+    margin-top: 2vh;
 }
 
 .tituloELetra{
- 
     height: auto;
     width: 50vw;
     display: flex;
     flex-direction: column;
-    
-
-    
 }
 
-.organizarTituloEArtista{
-   
-    height: auto;
-    width: 50vwa;
-}
-
-.organizarArtistaEBotao{
-    display: flex;
-
-    width: 40vw;
-    height: auto;
-    
-    margin-left: 6vw;
-}
-
-.organizarBotao{
-    
-    height: auto;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.botao{
-    width: 8vw;
-    height: 5vh;
-    border-radius: 15px;
-    background-color: #272727;
-    color: white;
-    font-family: "Jacques Francois", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.1vw;
-    font-size: 2vh;
-}
-
-.tituloDaLetra{
+.titulo{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
@@ -176,36 +87,66 @@ body{
     display: flex;
     justify-content: flex-start;
     margin-left: 6vw;
-    margin-bottom:5px ;
-    background-color: rgba(13, 13, 13, 0.7);
-    border-radius: 100px;
-    
+    margin-bottom:5px;
 }
 
-.nomeDoArtista{
+.artista{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vh;
-    letter-spacing: 0.2vh;
+    font-size: 4.3vh;
+    letter-spacing: 0.001em;
     z-index: 1;
-    width: auto;
-    color: #e9870f ;
+    width: 20vw;
+    color: #B261CD ;
     display: flex;
     justify-content: flex-start;
     
 }
-
-.organizarLetras{
-    
+.separarArtistaEBotao{
+    display: flex;
+    width: 45vw;
     height: auto;
-    width: 60vw;
+    margin-left: 6vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.organizarBotao{
+    height: auto;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organizarBotao button{
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px;
+    border-width: 0.2px;
+    border-color: #FBFBFB;
+    background-color: rgba(68, 68, 68, 0.25);
+    
+    color: white;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.01vw;
+    font-size: 2.5vh;
+}
+
+.letra{
+    height: auto;
+    width: 50vw;
     display: flex;
     justify-content: flex-start;
     margin-left: 6vw;
+    margin-top: 3vh;
 }
 
-.letraDaMusicaUm{
+.textoDaMusica{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
@@ -218,7 +159,15 @@ body{
 .significado{
     display: none;
     height: auto;
-    width: 60vw;
+    width: 50vw;
+    justify-content: flex-start;
+    margin-left: 6vw;
+}
+
+.cifra{
+    display: none;
+    height: auto;
+    width: 50vw;
     justify-content: flex-start;
     margin-left: 6vw;
 }
