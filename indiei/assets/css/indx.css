@@ -2,12 +2,16 @@
 
 *{margin: 0;}
 
-.negritoVermelho{
-    color: red;
+body{
+    overflow-x:hidden ;
+    background-color: #130D16;
+    background-image:  linear-gradient(rgba(19, 13, 22, 0.8), rgba(19, 13, 22, 0.8)), url(../Fotos/Fundo.png); 
 }
 
-.inicioPai{
-     background-image: url(../Fotos/FotosIndie.jpg); 
+.telaInicial{
+    background-image: url(../Fotos/FotosIndie.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -16,24 +20,41 @@
     flex-direction: column;
 }
 
-.tituloInicial{
+.telaInicial p{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
+    z-index: 1;
+}
+.telaInicial p:nth-child(1){
     font-size: 20vh;
     letter-spacing: 2vh;
-    z-index: 1;
     width: auto;
     color: #EDFF1A ;
 }
 
-.subTituloInicial{
+.telaInicial p:nth-child(2){
     color: #EDB6FF;
-    letter-spacing: 0.8vh;
+    letter-spacing: 0.4vh;
     font-size: 3vh;
 }
 
-body{
-    overflow-x:hidden ;
-    background-color: #121212;
+.telaInicial button{
+    width: 25vw;
+    height: 9vh;
+    margin-top: 10vw;
+    border-radius: 10px;
+    background-color: rgba(49, 24, 58, 0.2);
+    border: 0.2px, solid, white;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+}
+
+.telaInicial button:hover{
+background-color: rgba(100, 100, 100, 0.6);
 }

@@ -80,7 +80,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 7vh;
-    letter-spacing: 0.7vh;
+    letter-spacing: 0.3vh;
     z-index: 1;
     width: 60vw;
     color: #EDFF1A ;
@@ -88,6 +88,16 @@ body{
     justify-content: flex-start;
     margin-left: 6vw;
     margin-bottom:5px;
+}
+
+.separarArtistaEBotao{
+    display: flex;
+    width: 45vw;
+    height: auto;
+    margin-left: 6vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1vh;
 }
 
 .artista{
@@ -102,15 +112,6 @@ body{
     display: flex;
     justify-content: flex-start;
     
-}
-.separarArtistaEBotao{
-    display: flex;
-    width: 45vw;
-    height: auto;
-    margin-left: 6vw;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1vh;
 }
 
 .organizarBotao{
@@ -146,7 +147,7 @@ body{
     margin-top: 3vh;
 }
 
-.textoDaMusica{
+.letra p{
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
@@ -157,19 +158,41 @@ body{
 }
 
 .significado{
-    display: none;
     height: auto;
     width: 50vw;
+    display: none;
     justify-content: flex-start;
     margin-left: 6vw;
+    margin-top: 3vh;
+}
+
+.significado p{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 3vh ;
+    text-align: justify;
+    margin: 5px; 
 }
 
 .cifra{
-    display: none;
     height: auto;
     width: 50vw;
+    display: none;
     justify-content: flex-start;
     margin-left: 6vw;
+    margin-top: 3vh;
+}
+
+.cifra p{
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 3vh ;
+    text-align: justify;
+    margin: 5px; 
 }
 
 
