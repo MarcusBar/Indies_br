@@ -22,7 +22,7 @@ body{
 
 .parteDaDireita{
     width: 50vw;
-    height: 110vh;
+    height: auto;
     margin-top: -5vh;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@ body{
 
 .ImagemELinks{
     
-    width: 45vw;
-    height: 90vh;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +58,74 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 3.6vh;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff ;
+}
+
+.musicasSimilares{
+    margin-top: 4vh;
+    width: 35vw;
+    height: 30vh;
+    
+}
+
+.musicasSimilares p:nth-child(1){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5em;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff ;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.recomendaMusica{
+    background-color: rgba(70, 51, 51, 0.4);
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    border-radius:10px ;
+    margin-bottom: 3vh ;
+    transition: 1s;
+}
+
+.recomendaMusica:hover{
+    background-color: rgba(108, 73, 73, 0.35);
+}
+
+.recomendaMusica img:nth-child(1) {
+    width: 7vw;
+    height: 13vh;
+    margin-left: 2vw;
+}
+
+.tituloEArtistaRecomendado{
+    margin-left: 1.6vw;
+    margin-top:-2vw ;
+}
+
+.tituloEArtistaRecomendado p:nth-child(1){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff ;
+}
+
+.tituloEArtistaRecomendado p:nth-child(2){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
     letter-spacing: 0.1;
     z-index: 1;
     width: auto;
@@ -136,6 +204,11 @@ body{
     font-style: normal;
     letter-spacing: 0.01vw;
     font-size: 2.5vh;
+    transition: 1s;
+}
+
+.organizarBotao button:hover{
+background-color: rgba(100, 100, 100, 0.6);
 }
 
 .letra{
@@ -194,7 +267,3 @@ body{
     text-align: justify;
     margin: 5px; 
 }
-
-
-
-

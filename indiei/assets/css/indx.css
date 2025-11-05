@@ -50,11 +50,83 @@ body{
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 0.1em;
     transition: 0.3s;
 }
 
 .telaInicial button:hover{
 background-color: rgba(100, 100, 100, 0.6);
+}
+
+.maisRecentes{
+    width: auto;
+    height: 50vh;
+    margin-left: 3vw;
+}
+
+.maisRecentes p:nth-child(1){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #EDFF1A;
+}
+
+.organizarLadoALado{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.musicaQuadro{
+    background-color:rgba(48, 31, 58, 0.5);
+    width: 15vw;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    border-radius: 10px;
+    margin-right: 4vw;
+}
+
+.musicaQuadro:hover{
+    background-color:rgba(73, 47, 89, 0.5);
+}
+
+.musicaQuadro img{
+    width: 12vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+
+.musicaQuadro p:nth-child(2){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff;
+    margin-bottom: 0.5vh;
+    margin-left: -2.6vw;
+}
+
+.musicaQuadro p:nth-child(3){
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: 0.1;
+    z-index: 1;
+    width: auto;
+    color: #ffffff;
+    margin-left: -8vw;
 }
