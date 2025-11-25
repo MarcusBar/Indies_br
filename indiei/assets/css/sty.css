@@ -43,3 +43,8 @@ header{
 width: 100%;
 }
 
+@media (max-width: 766px){
+    .headerTexto{
+        font-size: 2vh;
+    }
+}
