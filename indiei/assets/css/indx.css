@@ -27,7 +27,7 @@ body{
     z-index: 1;
 }
 .telaInicial p:nth-child(1){
-    font-size: 20vh;
+    font-size: 10vw;
     letter-spacing: 2vh;
     width: auto;
     color: #EDFF1A ;
@@ -36,13 +36,13 @@ body{
 .telaInicial p:nth-child(2){
     color: #EDB6FF;
     letter-spacing: 0.4vh;
-    font-size: 3vh;
+    font-size: 1.5vw;
 }
 
 .telaInicial button{
     width: 25vw;
     height: 9vh;
-    margin-top: 10vw;
+    margin-top: 5vw;
     border-radius: 10px;
     background-color: rgba(49, 24, 58, 0.2);
     border: 0.2px, solid, white;
@@ -50,7 +50,7 @@ body{
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 3em;
+    font-size: 2.5vw;
     letter-spacing: 0.1em;
     transition: 0.3s;
 }
@@ -69,7 +69,7 @@ background-color: rgba(100, 100, 100, 0.6);
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 5em;
+    font-size: 5vw;
     letter-spacing: 0.1;
     z-index: 1;
     width: auto;
@@ -84,8 +84,8 @@ background-color: rgba(100, 100, 100, 0.6);
 
 .musicaQuadro{
     background-color:rgba(48, 31, 58, 0.5);
-    width: 15vw;
-    height: 31vh;
+    width: 16.5vw;
+    height: 36vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,9 +100,10 @@ background-color: rgba(100, 100, 100, 0.6);
 }
 
 .musicaQuadro img{
-    width: 12vw;
-    height: 20vh;
-    margin-bottom: 2vh;
+    width: auto;
+    height: 24vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
     border-radius: 5px;
 }
 
@@ -110,20 +111,19 @@ background-color: rgba(100, 100, 100, 0.6);
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.2vw;
     letter-spacing: 0.1;
     z-index: 1;
     width: auto;
     color: #ffffff;
     margin-bottom: 0.5vh;
-    margin-left: -2.6vw;
 }
 
 .musicaQuadro p:nth-child(3){
     font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.7em;
+    font-size: 1vw;
     letter-spacing: 0.1;
     z-index: 1;
     width: auto;

@@ -19,27 +19,30 @@
 
 
 <header class="headerTexto">
-    <a  class="headerDecorarTexto" >HOME</a>
-    <a  class="headerDecorarTexto" >SOBRE NOS</a>
-    <a  class="headerDecorarTexto" >NOTICIAS</a>
-    <a  class="headerDecorarTexto" >MUSICA</a>
+    <a  class="headerDecorarTexto" id="btn-home">HOME</a>
+    <a  class="headerDecorarTexto" id="btn-sobrenos">SOBRE NOS</a>
+    <a  class="headerDecorarTexto" id="btn-novidades">NOVIDADES</a>
+    <a  class="headerDecorarTexto" id="btn-musica">MUSICA</a>
 </header>
 
 <body>
     <section class="telaInicial">
         <p>INDIES-BR</p>
         <p>Analisando músicas brasileiras de artistas independentes</p>
-        <button>Explore!</button>
+        <button id="btn-explore">Explore!</button>
     </section>
 
-    <section class="maisRecentes">
+<section>
+    <section class="maisRecentes" id="parteDaMusica">
         <p>Mais Recentes</p>
+
         <div class="organizarLadoALado">
-            <div class="musicaQuadro">
-                <img src="assets/Fotos/historiaPARACacadoresDOIS 1.jpg">
-                <p>História Para Caçadores</p>
-                <p>Kamaitachi</p>
+            <div class="musicaQuadro" id="historiaParaCacadores">
+                <img src="assets/Fotos/historiaPARACacadoresDOIS 1.jpg" id="historiaParaCacadores">
+                <p id="historiaParaCacadores">História Para Caçadores</p>
+                <p id="historiaParaCacadores">Kamaitachi</p>
             </div>
+
             <div class="musicaQuadro">
                 <img src="assets/Fotos/historiaPARACacadoresDOIS 1.jpg">
                 <p>História Para Caçadores</p>
@@ -47,6 +50,28 @@
             </div>
         </div>
     </section>
-    
+
+    <section class="maisRecentes" id="parteDaMusica">
+        <p>Populares</p>
+
+        <div class="organizarLadoALado">
+            <div class="musicaQuadro" id="historiaParaCacadores">
+                <img src="assets/Fotos/historiaPARACacadoresDOIS 1.jpg" id="historiaParaCacadores">
+                <p id="historiaParaCacadores">História Para Caçadores</p>
+                <p id="historiaParaCacadores">Kamaitachi</p>
+            </div>
+            
+            <div class="musicaQuadro">
+                <img src="assets/Fotos/historiaPARACacadoresDOIS 1.jpg">
+                <p>História Para Caçadores</p>
+                <p>Kamaitachi</p>
+            </div>
+        </div>
+    </section>
+</section> 
+
+<section class="sobreNos"></section>
+
+    <script src="assets/java/home.js"></script>
 
 </body>

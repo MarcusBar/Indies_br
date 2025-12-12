@@ -2,8 +2,9 @@ document.addEventListener('click', (e) => {
     let el = e.target;
 
     if(el.classList.contains('home')) {
-        window.location.href = "index.html"
+        window.location.href = "index.html";
     }
+
 })
 
 function mudarLetra(id_da_div, div_antesUm, div_antesDois){
