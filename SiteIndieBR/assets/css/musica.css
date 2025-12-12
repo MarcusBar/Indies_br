@@ -30,6 +30,9 @@ body{
     align-items: center;
 }
 
+.imagemDaMusica{
+    background-size: contain;
+}
 .ImagemELinks{
     margin-top: 5vw;
     width: auto;
@@ -274,7 +277,7 @@ background-color: rgba(100, 100, 100, 0.6);
     margin: 5px; 
 }
 
-@media ( max-width: 1400px ){
+@media ( max-width: 1200px ){
     body {
     flex-direction: column-reverse; 
     }
